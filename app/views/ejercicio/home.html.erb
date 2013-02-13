@@ -1,0 +1,111 @@
+
+<div class="row">
+	<div class="eleven columns centered">
+		<dl class="tabs contained mobile">
+		  <dd class="active"><a href="#Ejer1">Ejercicio 1</a></dd>
+		  <dd><a href="#Ejer2">Ejercicio 2</a></dd>
+		  <dd><a href="#Ejer3">Ejercicio 3</a></dd>
+		</dl>
+		
+		<ul class="tabs-content contained mobile">
+		  <li class="active" id="Ejer1Tab">
+		  	<div class="row">
+		  		<div class="three columns" id="lista">
+		  			
+				  	<!--><ul id="sortable" class="selectable">
+					<%@random.each do |p|%>
+						  <li id="<%=p.id%>" class="ui-state-default">
+				  		  	<span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%=p.palabras%>
+				  		  </li>
+        			<%end%>	-->
+        			
+				  </ul> 
+				</div>
+				<div class="eight columns">
+					<div class="row">
+						<ul class="breadcrumbs">
+						  <li><a id="link-instrucciones">Instrucciones</a></li>
+						  <li><a id="link-ejer1">Ejercicio 1.1</a></li>
+						  <li><a id="link-ejer2">Ejercicio 1.2</a></li>
+						  <li class="unavailable"><a id="link-ejer3">Ejercicio 1.3</a></li>
+						</ul>   
+					</div>
+					<div class="row">
+							<form>
+							  <div class="row">
+							    <div class="two mobile-one columns">
+							    	<br />
+							      <label class="right inline">Sentencia:</label>
+							    </div>
+							    <div class="ten mobile-three columns">
+							    	<br />
+							      <input type="text" placeholder="e.g. caso 8:" class="eight" id="sentencia"/>
+							      <a id="listo" class="small success button">Listo!</a>
+							    </div>
+							  </div>
+							</form> 
+					</div>
+					
+					<div class="row">
+						<br />
+						<div id="contenidos" class="twelve columns">
+						</div>	<!--controles-->
+					</div>
+				</div>
+			</div>
+		  		</li>
+		  <li id="Ejer2Tab">
+		  	<p>En el contenedor 1 tienes una serie de intrucciones que están en desorden. Debes ordenarlas arrastrando cada instrucción al contenedor 2 de manera que formen un programa.</p>
+		  	<dir id="contenedor" class="row">
+		  		
+		  		<div class="twelve columns">
+		  			<div class="six columns" >
+				  	
+
+						<ul id="lista1" class="gallery ui-droppable">
+							<li id="1" class="ui-draggable">public abstract class Figura</li>
+							<li id="2" class="ui-draggable">{</li>
+							<li id="3" class="ui-draggable">public abstract double()</li>
+							<li id="4" class="ui-draggable">/*Mas sentencias</li>
+							<li id="5" class="ui-draggable">}</li>
+							
+						</ul>	
+							
+						
+					
+				</div>
+		  			<div class="six columns" idid="lista"> 
+			  			<ul id="lista2" class="selectable">
+			  							
+						</ul>
+		  			</div>
+		  			
+		  			</div>
+		  	</dir>
+		  	
+		  	
+		  </li>
+		  
+		  <li id="Ejer3Tab">Contenido 3</li>
+		</ul>
+	</div>
+</div>
+
+<div id="myModal" class="reveal-modal">
+  	<ul class="ch-grid">
+		<li>
+			<div class="ch-item ch-img-1">				
+				<div class="ch-info-wrap">
+					<div class="ch-info">
+						<div class="ch-info-front ch-img-1"></div>
+							<div class="ch-info-back">
+								<h3>Terminaste!</h3>
+								<p>Ejercicio No 1</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+		</li>
+	</ul>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
