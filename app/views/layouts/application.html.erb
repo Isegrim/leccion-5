@@ -8,66 +8,19 @@
 	<meta charset="utf-8" />
 
 
-
-
-	
-	<!-- Uncomment to make IE8 render like IE7 -->
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-	
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
-
-		
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>LECCION</title>
-        
-        <meta name="description" content="Slideshow with jmpress.js" />
-        <meta name="keywords" content="jmpress, slideshow, container, plugin, jquery, css3" />
-        <meta name="author" content="for Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
-
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
-		<![endif]-->
-		<!-- jQuery -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<!-- jmpress plugin -->
-		
-		<!-- jmslideshow plugin : extends the jmpress plugin -->
-		
-		<noscript>
-			<style>
-			.step {
-				width: 100%;
-				position: relative;
-			}
-			.step:not(.active) {
-				opacity: 1;
-				filter: alpha(opacity=99);
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
-			}
-			.step:not(.active) a.jms-link{
-				opacity: 1;
-				margin-top: 40px;
-			}
-			</style>
-		</noscript>
-
-
-	
 	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
   	<%= include_gon %>
 	<!-- Included CSS Files -->
-	<%= stylesheet_link_tag    "application" %>
+	<%= stylesheet_link_tag    "application"%>
+	
 	
 	<!-- Included JS Files  -->
-	<%= javascript_include_tag "application" %>
+	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "application"%>
+	
   
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 	<br />

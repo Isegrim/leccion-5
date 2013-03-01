@@ -23,6 +23,7 @@ group :assets do
   gem 'zurb-foundation', '~> 3.0.9'
   gem 'jquery-ui-rails'
   gem 'underscore-rails'
+  gem 'bxslider-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
